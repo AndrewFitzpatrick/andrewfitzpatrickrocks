@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.scss"],"names":[],"mappings":"AAAA,GAAI,SAAW,CAAG,iCAGhB,GACE,sBAAuB,CAEzB,GACE,uBAAyB,CAAA,CAPX,yBAGhB,GACE,sBAAuB,CAEzB,GACE,uBAAyB,CAAA","file":"main.e295f8b7.chunk.css","sourcesContent":["h1 {color: #F00;}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n"]}
