@@ -2,12 +2,13 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const Home = () => {
+const Contact = () => {
   return (
     <Layout>
-      <h1>Andrew Fitzpatrick .rocks</h1>
+      <h1>Contact</h1>
+      <p>contact content</p>
     </Layout>
   );
 };
 
-export default Home;
+export default Contact;

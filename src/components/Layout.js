@@ -6,12 +6,14 @@ const Layout = ({ children }) => {
   return (
     <div>
       <nav>
-        <Link to="/">
-          <button>Home</button>
-        </Link>
-
         <Link to="/about">
           <button>About</button>
+        </Link>
+        <Link to="/">
+          <button>Andrew Fitzpatrick</button>
+        </Link>
+        <Link to="/contact">
+          <button>Contact</button>
         </Link>
       </nav>
 
