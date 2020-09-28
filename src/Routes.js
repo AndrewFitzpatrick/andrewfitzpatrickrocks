@@ -1,31 +1,40 @@
-// src/App.js
+// src/Routes.js
 import React from "react";
-import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Import pages
 import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Restaurants from "./pages/restaurants";
+import Pinball from "./pages/pacific-pinball";
+import Fitztastic from "./pages/fitztastic";
 
-const App = () => {
+const Routes = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/about">
-          <Contact />
-        </Route>
-
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
-
-        <Route path="/contact">
+        <Route path="/about">
           <About />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/sciarra-restaurants">
+          <Restaurants />
+        </Route>
+        <Route path="/pacific-pinball">
+          <Pinball />
+        </Route>
+        <Route path="/fitztastic">
+          <Fitztastic />
         </Route>
       </Switch>
     </Router>
   );
 };
 
-export default App;
+export default Routes;
