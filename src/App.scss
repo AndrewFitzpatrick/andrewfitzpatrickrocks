@@ -8,3 +8,28 @@ h1 {color: #F00;}
     transform: rotate(360deg);
   }
 }*/
+
+header {
+  padding: 1rem 0;
+  .columns {
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .small a {
+    color: #ff9000;
+    font-size: 2.4rem;
+    font-family: 'The Bold Font';
+  }
+  .large a {
+    color: #46cc34;
+    font-size: 3rem;
+    font-family: 'The Bold Font';
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+}
