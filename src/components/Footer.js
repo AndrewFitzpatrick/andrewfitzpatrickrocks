@@ -4,11 +4,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <footer>
-        doctorfitztastic@gmail.com<br/>(609) 533-4509
-      </footer>
-    </div>
+    <footer>
+      doctorfitztastic@gmail.com<br/>(609) 533-4509
+    </footer>
   );
 };
 
