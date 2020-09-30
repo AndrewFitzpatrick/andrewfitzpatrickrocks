@@ -8,6 +8,18 @@ h1 {color: #F00;}
     transform: rotate(360deg);
   }
 }*/
+// header {
+//   position: fixed;
+//   top: 0;
+// }
+
+.route-wrapper {
+  position: relative;
+  min-height: 100vh;
+  > div {
+    position: absolute;
+  }
+}
 
 header {
   padding: 1rem 0;
