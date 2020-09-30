@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 const Home = () => {
   return (
     <Layout>
-      <div className="hero container">
+      <div className="hero">
         <div className="row">
           <div className="column five">
             <h1>Andrew Fitzpatrick</h1><h2>.rocks</h2>

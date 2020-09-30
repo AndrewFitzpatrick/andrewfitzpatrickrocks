@@ -4,7 +4,7 @@ import React from "react";
 const Skeleton = ({ children }) => {
   return (
     <div className="container">
-      <div class="row">
+      <div className="row">
         {children}
       </div>
     </div>
