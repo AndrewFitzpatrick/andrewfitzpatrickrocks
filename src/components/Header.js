@@ -1,6 +1,6 @@
 // src/components/Layout.js
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from './Link';
 import Skeleton from "./Skeleton.js";
 import headerNav from "../data/headerNav.js";
 

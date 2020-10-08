@@ -1,10 +1,9 @@
 // src/pages/about.js
 import React from "react";
-import Layout from "../components/Layout";
 
 const Pinball = () => {
   return (
-    <Layout>
+    <div>
       <h1>Pacific Pinball Museum</h1>
 
       <p>
@@ -15,7 +14,7 @@ const Pinball = () => {
         blandit elit. Ut a lacinia lorem. Duis non consequat ipsum. Aenean et
         libero ipsum. Duis sollicitudin vitae diam vitae tempor.
       </p>
-    </Layout>
+    </div>
   );
 };
 

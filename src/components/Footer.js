@@ -1,11 +1,12 @@
 // src/components/Layout.js
 import React from "react";
-// import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer class="container">
-      doctorfitztastic@gmail.com<br/>(609) 533-4509
+    <footer class="footer">
+      <div class="container">
+        doctorfitztastic@gmail.com<br/>(609) 533-4509
+      </div>
     </footer>
   );
 };
