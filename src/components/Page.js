@@ -9,15 +9,23 @@ class Page extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {shouldRenderChildren: true};
+        this.state = {shouldRenderChildren: true, isSliding: false};
+        // this.props = isSliding;
+        // let isSliding;
     }
 
     componentDidMount() {
         this.props.eventer.register(() => this.move());
+
+        // console.log(isSliding);
     }
 
     componentWillUnmount() {
         this.props.eventer.unregister(() => this.move());
+
+        // this.setState({isSliding: false});
+        // const isSliding === false;
+        // console.log(isSliding);
     }
 
     isVisible() {
@@ -32,14 +40,15 @@ class Page extends Component {
 
     move() {
         if (this.props.left !== this.props.from) {
-            this.setState({ shouldRenderChildren: true });
+            this.setState({ shouldRenderChildren: true, isSliding: true });
+            console.log(this.state.isSliding);
         }
         this.reRender();
     }
 
     async reRender() {
         await sleep(1000);
-        this.setState({shouldRenderChildren: this.isVisible()});
+        this.setState({shouldRenderChildren: this.isVisible(), isSliding: false});
     }
 
     render() {
@@ -49,7 +58,7 @@ class Page extends Component {
                 width: '100vw',
                 height: '100%',
                 position: 'fixed',
-                overflowY: 'scroll',
+                overflowY: this.state.isSliding ? null : 'scroll',
                 top: 0,
                 left: 0,
                 transform: 'translateX('+ this.props.left + 'px)',

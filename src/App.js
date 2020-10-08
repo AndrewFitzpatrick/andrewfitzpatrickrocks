@@ -22,7 +22,6 @@ class App extends Component {
     this.state = {left: 0}
   }
 
-
   render() {
     return (
       <div className="App">
