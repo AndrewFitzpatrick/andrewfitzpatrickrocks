@@ -60,7 +60,7 @@ class Nav extends Component {
         this.move(this.pages[window.location.hash.slice(1)]);
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         window.onhashchange = (e) => {
             const i = e.newURL.indexOf('#');
             const hash = e.newURL.slice(i + 1);

@@ -28,7 +28,9 @@ class App extends Component {
         <Header />
         <Nav>
           <Page path="/">
-            <div className="page" style={{ backgroundColor: 'red' }}>
+            <div className="page"
+              // style={{ backgroundColor: 'red' }}
+              >
               <Skeleton>
                 <Home />
               </Skeleton>
