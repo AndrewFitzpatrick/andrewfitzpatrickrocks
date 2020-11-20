@@ -48,7 +48,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 5rem 20px;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -384,6 +384,12 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
+/* Positioning */
+.u-center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 
 
 /* Misc

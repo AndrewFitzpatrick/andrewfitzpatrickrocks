@@ -1,26 +1,22 @@
 h1 {color: #F00;}
 
-.example-enter {
-  opacity: 0.01;
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(15vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 1200ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
 }
-
-.example-enter.example-enter-active {
+.fade-in-section.is-visible {
   opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  transform: none;
+  visibility: visible;
 }
 
 .full-width {
   position: relative;
-  width: 100vw;
+  width: calc(100vw - 19rem);
   left: -7.5rem;
   padding: 0 9.5rem;
   float: left;
@@ -78,6 +74,7 @@ h1 {color: #F00;}
 
 header {
   padding: 1rem 0;
+  background-color: #ffffff;
   .columns {
     text-align: center;
   }
@@ -115,4 +112,12 @@ header {
   background-color: #fff200;
   // padding: 0 2rem;
   // float: left;
+}
+
+.home-port {
+  margin: 2rem 0;
+  padding-bottom: 5rem;
+  img {
+    width: 100%;
+  }
 }

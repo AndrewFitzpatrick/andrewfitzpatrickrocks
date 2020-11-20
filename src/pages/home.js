@@ -2,9 +2,11 @@
 import React from "react";
 import homepage from "../data/sitedata.js";
 import Link from '../components/Link';
+import FadeInSection from '../components/Fadein';
 
-const Home = () => {
-  return (
+class Home extends React.Component {
+  render() {
+    return(
     <div>
       <div className="hero">
         <div className="five columns">
@@ -17,33 +19,45 @@ const Home = () => {
       <div className="fitzfolio full-width">
         <h2>FITZ-FOLIO</h2>
       </div>
-      <div>
-      {
-        homepage.map((item, i) => (
-          <div
-            className = "home-port full-width"
-            key={i}
-          >
-            <Link to = {item.link}>
-              <h4>{item.company}</h4>
-            </Link>
-            <div><h4>{item.title}</h4></div>
-            <div><h4>{item.date}</h4></div>
-            {
-              item.image.map((logo, i) => (
-                <div className= "three columns" key={i}>
-                  <img src={logo} alt="logo" />
-                </div>
 
-              ))
-            }
+      { homepage.map((item, i) => (
+
+
+
+          <div
+            className = "full-width"
+            key={i}
+            style={{backgroundColor: item.bgcolor}}
+
+          >
+            <div className="home-port">
+            <FadeInSection>
+              <Link to = {item.link}>
+                <h4>{item.company}</h4>
+              </Link>
+              <div><h4>{item.title}</h4></div>
+              <div><h4>{item.date}</h4></div>
+              <div className="row">
+              { item.image.map((logo, i) => (
+
+
+                    <div className= "one-third column u-center-block" key={i}>
+                      <img src={logo} alt="logo" />
+                    </div>
+
+
+
+              ))}
+              </div>
+              </FadeInSection>
+            </div>
           </div>
 
-        ))
-      }
-      </div>
+      ))}
+
     </div>
   );
+};
 };
 
 export default Home;
