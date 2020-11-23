@@ -5,10 +5,19 @@ const homepage = [
     date: '2019 - 2020',
     link: '/sciarra-restaurants',
     bgcolor: '#ed45a0',
-    image: [
-      require('../images/poppis_logo.png'),
-      require('../images/mudhen_logo.png'),
-      require('../images/dogtooth_logo.png')
+    images: [
+      {
+        image: require('../images/poppis_logo.png'),
+        link: './pages/restaurants'
+      },
+      {
+        image: require('../images/mudhen_logo.png'),
+        link: './pages/restaurants'
+      },
+      {
+        image: require('../images/dogtooth_logo.png'),
+        link: './pages/restaurants'
+      }
     ]
   },
   {
@@ -17,10 +26,19 @@ const homepage = [
     date: '2019 - 2020',
     link: '/cmc-dems',
     bgcolor: '#69b3ff',
-    image: [
-      require('../images/spacer.png'),
-      require('../images/cmcdems_logo.png'),
-      require('../images/spacer.png')
+    images: [
+      {
+        image: require('../images/spacer.png'),
+        link: '#'
+      },
+      {
+        image: require('../images/cmcdems_logo.png'),
+        link: './pages/cmc-dems'
+      },
+      {
+        image: require('../images/spacer.png'),
+        link: '#'
+      }
     ]
   },
   {
@@ -29,10 +47,17 @@ const homepage = [
     date: '2016 - 2020',
     link: '/pacific-pinball',
     bgcolor: '#20ce88',
-    image: [
-      require('../images/spacer.png'),
-      require('../images/ppm_logo.png'),
-      require('../images/spacer.png')
+    images: [
+      {
+        image: require('../images/spacer.png'),
+        link: '#'
+      },
+      {image: require('../images/ppm_logo.png'),
+        link: './pages/pacific-pinball'
+      },
+      {image: require('../images/spacer.png'),
+        link: '#'
+      }
     ]
   },
   {
@@ -41,10 +66,17 @@ const homepage = [
     date: '2018 - PRESENT',
     link: '/fitztastic',
     bgcolor: '#ff9000',
-    image: [
-      require('../images/spacer.png'),
-      require('../images/fitztastic_logo.png'),
-      require('../images/spacer.png')
+    images: [
+      {image: require('../images/spacer.png'),
+        link: '#'
+      },
+      {
+        image: require('../images/fitztastic_logo.png'),
+        link: './pages/fitztastic'
+      },
+      {image: require('../images/spacer.png'),
+        link: '#'
+      },
     ]
   }
 ];

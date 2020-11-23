@@ -1,5 +1,13 @@
 h1 {color: #F00;}
 
+.over {
+  position: relative;
+  z-index: 999;
+}
+.under {
+  position: relative;
+  z-index: 1;
+}
 .fade-in-section {
   opacity: 0;
   transform: translateY(15vh);

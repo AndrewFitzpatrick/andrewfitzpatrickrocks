@@ -9,10 +9,10 @@ class Home extends React.Component {
     return(
     <div>
       <div className="hero">
-        <div className="five columns">
+        <div className="five columns over">
           <h1>Andrew Fitzpatrick</h1><h3>.rocks</h3>
         </div>
-        <div className="seven columns wrapper">
+        <div className="seven columns wrapper under">
           <img src={require('../images/fitz_pic.jpg')} id="slide" className="heroImage" alt="Andrew Fitzpatrick rocks"/>
         </div>
       </div>
@@ -38,11 +38,14 @@ class Home extends React.Component {
               <div><h4>{item.title}</h4></div>
               <div><h4>{item.date}</h4></div>
               <div className="row">
-              { item.image.map((logo, i) => (
+              { item.images.map((logo, i) => (
 
 
                     <div className= "one-third column u-center-block" key={i}>
-                      <img src={logo} alt="logo" />
+                      <Link to = {logo.link}>
+                        <img src={logo.image} alt="logo" />
+                      </Link>
+
                     </div>
 
 

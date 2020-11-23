@@ -13,7 +13,7 @@ const Header = () => {
             headerNav.map((item, i) => (
               <div className = {item.classes} key={i}>
                 <h4>
-                  <Link to = {item.link} key={i}>
+                  <Link to = {item.link}>
                     {item.text}
                   </Link>
                 </h4>
