@@ -7,15 +7,18 @@ const homepage = [
     bgcolor: '#ed45a0',
     images: [
       {
-        image: require('../images/poppis_logo.png'),
+        image: require('../images/poppis_logo.png').default,
+        imageHover: require('../images/poppis_logo_over.png').default,
         link: './pages/restaurants'
       },
       {
-        image: require('../images/mudhen_logo.png'),
+        image: require('../images/mudhen_logo.png').default,
+        imageHover: require('../images/mudhen_logo_over.png').default,
         link: './pages/restaurants'
       },
       {
-        image: require('../images/dogtooth_logo.png'),
+        image: require('../images/dogtooth_logo.png').default,
+        imageHover: require('../images/dogtooth_logo_over.png').default,
         link: './pages/restaurants'
       }
     ]
@@ -28,15 +31,16 @@ const homepage = [
     bgcolor: '#69b3ff',
     images: [
       {
-        image: require('../images/spacer.png'),
+        image: require('../images/spacer.png').default,
         link: '#'
       },
       {
-        image: require('../images/cmcdems_logo.png'),
+        image: require('../images/cmcdems_logo.png').default,
+        imageHover: require('../images/cmcdems_logo_over.png').default,
         link: './pages/cmc-dems'
       },
       {
-        image: require('../images/spacer.png'),
+        image: require('../images/spacer.png').default,
         link: '#'
       }
     ]
@@ -49,13 +53,15 @@ const homepage = [
     bgcolor: '#20ce88',
     images: [
       {
-        image: require('../images/spacer.png'),
+        image: require('../images/spacer.png').default,
         link: '#'
       },
-      {image: require('../images/ppm_logo.png'),
+      {
+        image: require('../images/ppm_logo.png').default,
+        imageHover: require('../images/ppm_logo_over.png').default,
         link: './pages/pacific-pinball'
       },
-      {image: require('../images/spacer.png'),
+      {image: require('../images/spacer.png').default,
         link: '#'
       }
     ]
@@ -67,14 +73,15 @@ const homepage = [
     link: '/fitztastic',
     bgcolor: '#ff9000',
     images: [
-      {image: require('../images/spacer.png'),
+      {image: require('../images/spacer.png').default,
         link: '#'
       },
       {
-        image: require('../images/fitztastic_logo.png'),
+        image: require('../images/fitztastic_logo.png').default,
+        imageHover: require('../images/fitztastic_logo_over.png').default,
         link: './pages/fitztastic'
       },
-      {image: require('../images/spacer.png'),
+      {image: require('../images/spacer.png').default,
         link: '#'
       },
     ]
