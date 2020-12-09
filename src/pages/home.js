@@ -2,7 +2,7 @@
 import React from 'react';
 import homepage from "../data/sitedata.js";
 import Link from '../components/Link';
-import Image from '../components/Image';
+import RolloverImage from '../components/RolloverImage';
 import FadeInSection from '../components/Fadein';
 import arrow from '../images/arrow.png'
 
@@ -39,7 +39,7 @@ logoImages(imageData) {
     { imageData.images.map((logo, i) => (
       <div className = "one-third column bg-image" key={i} style={{backgroundImage: `url(${logo.image})` }}>
         <Link to = {logo.link}>
-          <Image
+          <RolloverImage
             defaultImage = {logo.image}
             rolloverImage = {logo.imageHover}
             altImage = {logo.alt}/>
@@ -62,7 +62,7 @@ arrowLink(linkData) {
           backgroundRepeat: 'no-repeat'
         }}>
         <Link to = {linkData.link}>
-          <Image
+          <RolloverImage
             defaultImage = {require('../images/arrow.png').default}
             altImage = "arrow"
             rolloverImage = {require('../images/arrow_over.png').default}

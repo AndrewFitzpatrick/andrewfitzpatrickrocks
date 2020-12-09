@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Image extends Component {
+class RolloverImage extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -38,4 +38,4 @@ hideHoverImage = (passedImage) => {
 
 }
 
-export default Image;
+export default RolloverImage;
