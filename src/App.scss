@@ -1,4 +1,9 @@
 h1 {color: #F00;}
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
 .link {
   cursor: pointer;
@@ -49,7 +54,6 @@ h1 {color: #F00;}
   margin-right: auto;
   margin-left: auto;
   margin-top: 5em;
-  // padding: 0 2em;
   z-index: 15000;
 }
 
@@ -58,7 +62,6 @@ h1 {color: #F00;}
     overflow: hidden;
     width: auto;
     height: 90vh;
-    // border: 1px solid black;
 }
 
 #slide {
@@ -66,7 +69,6 @@ h1 {color: #F00;}
     right: -800px;
     width: auto;
     height: 90vh;
-    // background: blue;
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 2s;
     animation: slide 0.5s forwards;
@@ -130,5 +132,6 @@ header {
   padding-bottom: 5rem;
   img {
     width: 100%;
+    display: block;
   }
 }

@@ -9,17 +9,20 @@ const homepage = [
       {
         image: require('../images/poppis_logo.png').default,
         imageHover: require('../images/poppis_logo_over.png').default,
-        link: './pages/restaurants'
+        link: './pages/restaurants',
+        alt: 'Poppis Brick Oven'
       },
       {
         image: require('../images/mudhen_logo.png').default,
         imageHover: require('../images/mudhen_logo_over.png').default,
-        link: './pages/restaurants'
+        link: './pages/restaurants',
+        alt: 'Mudhen Brewery'
       },
       {
         image: require('../images/dogtooth_logo.png').default,
         imageHover: require('../images/dogtooth_logo_over.png').default,
-        link: './pages/restaurants'
+        link: './pages/restaurants',
+        alt: 'Dogtooth'
       }
     ]
   },
@@ -32,15 +35,18 @@ const homepage = [
     images: [
       {
         image: require('../images/spacer.png').default,
+        alt: 'cmcdems',
         link: '#'
       },
       {
         image: require('../images/cmcdems_logo.png').default,
         imageHover: require('../images/cmcdems_logo_over.png').default,
+        alt: 'cmcdems',
         link: './pages/cmc-dems'
       },
       {
         image: require('../images/spacer.png').default,
+        alt: 'cmcdems',
         link: '#'
       }
     ]
@@ -54,14 +60,18 @@ const homepage = [
     images: [
       {
         image: require('../images/spacer.png').default,
+        alt: 'pacific pinball museum',
         link: '#'
       },
       {
         image: require('../images/ppm_logo.png').default,
+        alt: 'pacific pinball museum',
         imageHover: require('../images/ppm_logo_over.png').default,
         link: './pages/pacific-pinball'
       },
-      {image: require('../images/spacer.png').default,
+      {
+        image: require('../images/spacer.png').default,
+        alt: 'pacific pinball museum',
         link: '#'
       }
     ]
@@ -73,15 +83,20 @@ const homepage = [
     link: '/fitztastic',
     bgcolor: '#ff9000',
     images: [
-      {image: require('../images/spacer.png').default,
+      {
+        image: require('../images/spacer.png').default,
+        alt: 'fitztastic',
         link: '#'
       },
       {
         image: require('../images/fitztastic_logo.png').default,
+        alt: 'fitztastic',
         imageHover: require('../images/fitztastic_logo_over.png').default,
         link: './pages/fitztastic'
       },
-      {image: require('../images/spacer.png').default,
+      {
+        image: require('../images/spacer.png').default,
+        alt: 'fitztastic',
         link: '#'
       },
     ]

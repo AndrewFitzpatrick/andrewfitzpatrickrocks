@@ -4,6 +4,7 @@ import homepage from "../data/sitedata.js";
 import Link from '../components/Link';
 import Image from '../components/Image';
 import FadeInSection from '../components/Fadein';
+import arrow from '../images/arrow.png'
 
 class Home extends React.Component {
 
@@ -36,12 +37,38 @@ logoImages(imageData) {
   return (
   <div className="row">
     { imageData.images.map((logo, i) => (
-      <div className= "one-third column" key={i}>
+      <div className = "one-third column bg-image" key={i} style={{backgroundImage: `url(${logo.image})` }}>
         <Link to = {logo.link}>
-          <Image logo = {logo}/>
+          <Image
+            defaultImage = {logo.image}
+            rolloverImage = {logo.imageHover}
+            altImage = {logo.alt}/>
         </Link>
       </div>
     ))}
+    </div>
+  )
+}
+
+arrowLink(linkData) {
+  return(
+    <div className="row">
+      <div
+        className= "two columns arrow"
+        style={{
+          backgroundImage: `url(${arrow})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}>
+        <Link to = {linkData.link}>
+          <Image
+            defaultImage = {require('../images/arrow.png').default}
+            altImage = "arrow"
+            rolloverImage = {require('../images/arrow_over.png').default}
+          />
+        </Link>
+      </div>
     </div>
   )
 }
@@ -58,6 +85,7 @@ homepageSection() {
         <FadeInSection>
           {this.jobTitles(item)}
           {this.logoImages(item)}
+          {this.arrowLink(item)}
           </FadeInSection>
         </div>
       </div>
