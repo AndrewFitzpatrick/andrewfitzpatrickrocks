@@ -6,19 +6,9 @@ import RolloverImage from '../components/RolloverImage';
 import FadeInSection from '../components/Fadein';
 import arrow from '../images/arrow.png'
 
-class Home extends React.Component {
+function Home() {
 
-constructor(props) {
-  super(props)
-  this.state = {
-    showHoverImage: false
-  }
-  this.jobTitles = this.jobTitles.bind(this);
-  this.homepageSection = this.homepageSection.bind(this);
-  this.logoImages = this.logoImages.bind(this);
-}
-
-jobTitles(jobData) {
+function jobTitles(jobData) {
   const jobInfo = [jobData.company, jobData.title, jobData.date];
   return jobInfo.map((job, i) => {
     return(
@@ -33,7 +23,7 @@ jobTitles(jobData) {
   })
 }
 
-logoImages(imageData) {
+function logoImages(imageData) {
   return (
   <div className="row">
     { imageData.images.map((logo, i) => (
@@ -50,7 +40,7 @@ logoImages(imageData) {
   )
 }
 
-arrowLink(linkData) {
+function arrowLink(linkData) {
   return(
     <div className="row">
       <div
@@ -73,7 +63,7 @@ arrowLink(linkData) {
   )
 }
 
-homepageSection() {
+function homepageSection() {
   return homepage.map((item, i) => {
     return(
       <div
@@ -83,38 +73,35 @@ homepageSection() {
       >
         <div className="home-port">
         <FadeInSection>
-          {this.jobTitles(item)}
-          {this.logoImages(item)}
-          {this.arrowLink(item)}
+          {jobTitles(item)}
+          {logoImages(item)}
+          {arrowLink(item)}
           </FadeInSection>
         </div>
       </div>
     )
   }
 )}
-
-  render() {
-    return(
-      <div>
-        <div className="hero">
-          <div className="five columns over">
-            <h1>Andrew Fitzpatrick</h1><h3>.rocks</h3>
-          </div>
-          <div className="seven columns wrapper under">
-            <img
-              src={require('../images/fitz_pic.jpg').default}
-              id="slide" className="heroImage"
-              alt="Andrew Fitzpatrick rocks"
-            />
-          </div>
+  return(
+    <div>
+      <div className="hero">
+        <div className="five columns over">
+          <h1>Andrew Fitzpatrick</h1><h3>.rocks</h3>
         </div>
-        <div className="fitzfolio full-width">
-          <h2>FITZ-FOLIO</h2>
+        <div className="seven columns wrapper under">
+          <img
+            src={require('../images/fitz_pic.jpg').default}
+            id="slide" className="heroImage"
+            alt="Andrew Fitzpatrick rocks"
+          />
         </div>
-        {this.homepageSection()}
       </div>
-    );
-  };
+      <div className="fitzfolio full-width">
+        <h2>FITZ-FOLIO</h2>
+      </div>
+      {homepageSection()}
+    </div>
+  );
 };
 
 export default Home;
